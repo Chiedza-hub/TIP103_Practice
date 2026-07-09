@@ -34,3 +34,4 @@ protein_head = Node('Ala', Node('Gly', Node('Leu', Node('Val'))))
 protein_head.next.next.next.next = protein_head.next 
 
 print(cycle_length(protein_head))
+
