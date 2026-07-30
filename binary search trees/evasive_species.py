@@ -93,6 +93,8 @@ def remove_species(ecosystem, name):
     #else no children
         
     #Adjust tree
+    if prev is None:
+        return replacement
     if prev.left == curr:
             prev.left = replacement
     elif prev.right == curr:
